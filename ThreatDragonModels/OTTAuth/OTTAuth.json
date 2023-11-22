@@ -124,6 +124,13 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -260,7 +267,7 @@
             "zIndex": 9,
             "id": "166a4763-016a-486b-92df-a86adc8bab82",
             "data": {
-              "name": "Allsecure\nMobile Phone\nOTT Service",
+              "name": "Data Flow",
               "description": "",
               "type": "tm.Flow",
               "isTrustBoundary": false,
@@ -350,62 +357,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Erwarteter OTT",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "2503a360-01b6-4464-b35f-42c6fb583348",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "1. Auth Challenge"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "target": {
-              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
-            },
-            "vertices": [
-              {
-                "x": 440,
-                "y": -10
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "2. Weiterleitung\nTelefonnummer",
               "description": "",
               "outOfScope": false,
@@ -435,7 +386,12 @@
             "target": {
               "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 560,
+                "y": 120
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -654,8 +610,8 @@
             },
             "vertices": [
               {
-                "x": 559.5,
-                "y": -60
+                "x": 570,
+                "y": -10
               }
             ]
           },
@@ -1024,46 +980,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Externe E-Mail Dienst",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "0f05cd53-be30-4dd0-b9a8-ff6629666f29",
-            "source": {
-              "x": 650,
-              "y": -250
-            },
-            "target": {
-              "x": 650,
-              "y": -250
-            },
-            "vertices": [
-              {
-                "x": 690,
-                "y": -320
-              },
-              {
-                "x": 830,
-                "y": -370
-              },
-              {
-                "x": 760,
-                "y": -180
-              }
-            ],
-            "labels": [
-              "Externe E-Mail Dienst"
-            ]
-          },
-          {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "Externer Service für T\nelefonnummernauflö\nsung",
               "description": "",
               "isTrustBoundary": true,
@@ -1405,8 +1321,8 @@
                 "y": -40
               },
               {
-                "x": 580,
-                "y": 120
+                "x": 610,
+                "y": 170
               }
             ],
             "labels": [
@@ -1467,9 +1383,185 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wöchentliche Report,\nsigniert und verschlüsselt",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d08a3e13-9b28-4d9c-bccf-44e710db3f5e",
+            "source": {
+              "cell": "16dfd857-4eb2-4e0e-aaec-6c59b9ebeb93"
+            },
+            "target": {
+              "cell": "2939f136-9519-4303-afba-227f8986b54a"
+            },
+            "labels": [
+              "Wöchentliche Report,\nsigniert und verschlüsselt"
+            ],
+            "vertices": [
+              {
+                "x": 650,
+                "y": -180
+              },
+              {
+                "x": 780,
+                "y": -150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wöchentliche SIEM-Report,\nsigniert und verschlüsselt",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a0eeecbf-2472-4f9f-9b8e-a8dfaa380353",
+            "source": {
+              "cell": "2939f136-9519-4303-afba-227f8986b54a"
+            },
+            "target": {
+              "cell": "e15d462b-2102-4db3-85e0-74233cd51d4f"
+            },
+            "labels": [
+              "Wöchentliche SIEM-Report,\nsigniert und verschlüsselt"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Externe E-Mail Dienst",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "0f05cd53-be30-4dd0-b9a8-ff6629666f29",
+            "source": {
+              "x": 740,
+              "y": -270
+            },
+            "target": {
+              "x": 740,
+              "y": -270
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": -360
+              },
+              {
+                "x": 900,
+                "y": -360
+              },
+              {
+                "x": 850,
+                "y": -210
+              }
+            ],
+            "labels": [
+              "Externe E-Mail Dienst"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Auth Challenge",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "79c625ae-0ebe-44ae-99ab-e3591210cb4a",
+            "source": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "target": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "labels": [
+              "1. Auth Challenge"
+            ]
+          },
+          {
             "position": {
-              "x": 350,
-              "y": -120
+              "x": 340,
+              "y": -90
             },
             "size": {
               "width": 120,
@@ -1591,8 +1683,8 @@
           },
           {
             "position": {
-              "x": 680,
-              "y": -310
+              "x": 770,
+              "y": -360
             },
             "size": {
               "width": 100,
@@ -1614,7 +1706,7 @@
             "zIndex": 14,
             "data": {
               "type": "tm.Flow",
-              "name": "E-Mail Dienst",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1629,8 +1721,8 @@
           },
           {
             "position": {
-              "x": 400.99999999999994,
-              "y": -219
+              "x": 390.99999999999994,
+              "y": -190.99999999999994
             },
             "size": {
               "width": 112.5,

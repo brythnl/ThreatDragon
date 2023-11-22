@@ -124,13 +124,6 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1229,50 +1222,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Externe Kryptographie-Software",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "dfd1bd8d-60bc-4d81-bd09-85ea14563bf8",
-            "labels": [
-              "Externe Kryptographie-Software"
-            ],
-            "source": {
-              "x": 810,
-              "y": -60
-            },
-            "target": {
-              "x": 810,
-              "y": -60
-            },
-            "vertices": [
-              {
-                "x": 720,
-                "y": -20
-              },
-              {
-                "x": 740,
-                "y": 100
-              },
-              {
-                "x": 850,
-                "y": 80
-              },
-              {
-                "x": 880,
-                "y": 10
-              }
-            ]
-          },
-          {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "",
               "description": "",
               "isTrustBoundary": true,
@@ -1556,6 +1505,50 @@
             },
             "labels": [
               "1. Auth Challenge"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Externe Kryptographie-Software",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "dfd1bd8d-60bc-4d81-bd09-85ea14563bf8",
+            "labels": [
+              "Externe Kryptographie-Software"
+            ],
+            "source": {
+              "x": 780,
+              "y": -60
+            },
+            "target": {
+              "x": 780,
+              "y": -60
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 0
+              },
+              {
+                "x": 740,
+                "y": 100
+              },
+              {
+                "x": 850,
+                "y": 80
+              },
+              {
+                "x": 850,
+                "y": -30
+              }
             ]
           },
           {

@@ -1244,8 +1244,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
-              "description": "",
+              "name": "Monatliche Report\nmit Signaturen",
+              "description": "RAW-Daten als Excel-Tabelle",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -1264,7 +1264,7 @@
               "cell": "2939f136-9519-4303-afba-227f8986b54a"
             },
             "labels": [
-              "Monatliche Report"
+              "Monatliche Report\nmit Signaturen"
             ],
             "vertices": [
               {
@@ -1293,7 +1293,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Monatliche Report",
+              "name": "Monatliche Report\nmit Signaturen",
               "description": "RAW-Daten als Excel-Tabelle",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1318,7 +1318,7 @@
               }
             ],
             "labels": [
-              "Monatliche Report"
+              "Monatliche Report\nmit Signaturen"
             ]
           },
           {
@@ -1329,20 +1329,37 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Externe E-Mail Dienst",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "id": "0f05cd53-be30-4dd0-b9a8-ff6629666f29",
             "source": {
-              "x": 720,
-              "y": -340
+              "x": 650,
+              "y": -250
             },
             "target": {
-              "x": 820,
-              "y": -240
-            }
+              "x": 650,
+              "y": -250
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": -320
+              },
+              {
+                "x": 830,
+                "y": -370
+              },
+              {
+                "x": 760,
+                "y": -180
+              }
+            ],
+            "labels": [
+              "Externe E-Mail Dienst"
+            ]
           },
           {
             "position": {

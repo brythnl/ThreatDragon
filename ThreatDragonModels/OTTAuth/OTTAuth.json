@@ -860,8 +860,8 @@
             },
             "vertices": [
               {
-                "x": 760,
-                "y": -10
+                "x": 790,
+                "y": 19
               }
             ]
           },
@@ -1009,12 +1009,12 @@
                 "y": -40
               },
               {
-                "x": 500,
-                "y": -150
+                "x": 490,
+                "y": -280
               },
               {
-                "x": 350,
-                "y": -150
+                "x": 340,
+                "y": -160
               },
               {
                 "x": 243,
@@ -1058,15 +1058,15 @@
               "threats": []
             },
             "id": "0d1e127d-491f-4a3b-9812-68186e96fee5",
+            "labels": [
+              "OTT"
+            ],
             "source": {
               "cell": "166a4763-016a-486b-92df-a86adc8bab82"
             },
             "target": {
               "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "labels": [
-              "OTT"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1160,6 +1160,9 @@
               "isTrustBoundary": true
             },
             "id": "77f8e82d-1663-4ea9-bb71-3d98a3be9275",
+            "labels": [
+              "OTT\n"
+            ],
             "source": {
               "cell": "fd7303e8-29d2-4d76-bf7d-87eb619ede69"
             },
@@ -1175,9 +1178,6 @@
                 "x": 360,
                 "y": 490
               }
-            ],
-            "labels": [
-              "OTT\n"
             ]
           },
           {
@@ -1194,6 +1194,9 @@
               "hasOpenThreats": false
             },
             "id": "dfd1bd8d-60bc-4d81-bd09-85ea14563bf8",
+            "labels": [
+              "Externe Kryptographie-Software"
+            ],
             "source": {
               "x": 700,
               "y": -20
@@ -1202,9 +1205,6 @@
               "x": 690,
               "y": -20
             },
-            "labels": [
-              "Externe Kryptographie-Software"
-            ],
             "vertices": [
               {
                 "x": 620,
@@ -1223,6 +1223,126 @@
                 "y": 20
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isTrustBoundary": true
+            },
+            "id": "5f7ca727-9b63-4b3b-a7df-70406f0ebfdf",
+            "source": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "target": {
+              "cell": "2939f136-9519-4303-afba-227f8986b54a"
+            },
+            "labels": [
+              "Monatliche Report"
+            ],
+            "vertices": [
+              {
+                "x": 691.5,
+                "y": -140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Monatliche Report",
+              "description": "RAW-Daten als Excel-Tabelle",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "e031600a-3b30-47e8-8326-85f621788629",
+            "source": {
+              "cell": "2939f136-9519-4303-afba-227f8986b54a"
+            },
+            "target": {
+              "cell": "e15d462b-2102-4db3-85e0-74233cd51d4f"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": -290
+              }
+            ],
+            "labels": [
+              "Monatliche Report"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "0f05cd53-be30-4dd0-b9a8-ff6629666f29",
+            "source": {
+              "x": 720,
+              "y": -340
+            },
+            "target": {
+              "x": 820,
+              "y": -240
+            }
           },
           {
             "position": {
@@ -1345,6 +1465,78 @@
               "isBidirectional": false,
               "protocol": "",
               "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 680,
+              "y": -310
+            },
+            "size": {
+              "width": 100,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "E-Mail Dienst"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2939f136-9519-4303-afba-227f8986b54a",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Flow",
+              "name": "E-Mail Dienst",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 400.99999999999994,
+              "y": -219
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Management"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "e15d462b-2102-4db3-85e0-74233cd51d4f",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Management",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
             }
           }
         ],

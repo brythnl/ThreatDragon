@@ -87,7 +87,7 @@
               "threats": [
                 {
                   "id": "fc58f5ea-2f3f-450b-b2e2-3026d37084c4",
-                  "title": "Priviledge Escalation",
+                  "title": "Privilege Escalation",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",

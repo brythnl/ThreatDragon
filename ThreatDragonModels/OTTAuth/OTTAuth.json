@@ -1736,7 +1736,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Angreifer manipuliert daten um authentifikation an eigene telefonnummer zu schicken\nCAPEC-66 SQL Injection\nT1565.001 Stored Data Manipulation\nD8, R5, E8, A6, D4 = 6,2",
-                  "mitigation": "- File \n- D3\n\nInput Validation:\n- ASVS V5.1\n- MASVS-CODE-4",
+                  "mitigation": "- File Content Analysis und Input Validation:  Integrität der Daten zu gewährleisten, indem der Inhalt von Dateien analysiert wird, um unerwünschte Manipulationen zu erkennen. Input Validation stellt sicher, dass die eingegebenen Daten den erwarteten Mustern und Formaten entsprechen, um unerwünschte Eingaben zu verhindern.\n\n- Umsetzung: Verwendung von Antivirensoftware, Integritätsprüfungen und maschinellem Lernen erreicht werden. Input Validierung der Benutzereingaben auf der Anwendungsebene, um sicherzustellen, dass nur zulässige und erwartete Daten akzeptiert werden. Dies kann durch reguläre Ausdrücke, Whitelists und Blacklists erfolgen.\n\n- D3-FCOA (https://d3fend.mitre.org/technique/d3f:FileContentAnalysis/)\n- ASVS V5.1\n- MASVS-CODE-4",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 111,

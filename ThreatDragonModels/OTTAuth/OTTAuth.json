@@ -1940,7 +1940,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "angreifer kann logdateien sammeln\nCAPEC-37 Retrieve Embedded Sensitive Data\nT1654 Log Enumeration\nD7, R6, E7, A5, D8 = 6,6",
-                  "mitigation": "- D3-\n- ASVS V7.1\n- MASVS-STORAGE-2",
+                  "mitigation": "Dateiberechtigungen: beschränkt den Zugriff auf Logdateien. Durch die Begrenzung der Berechtigungen wird sichergestellt, dass nur autorisierte Benutzer oder Prozesse auf die Logdateien zugreifen können.\n\n- Umsetzung: Lokale Dateiberechtigungen müssen so konfiguriert werden, dass nur berechtigte Benutzer oder Systemprozesse Schreib- und Lesezugriff auf Logdateien haben, z.B. mit chmod.\n\n- D3-LFP (https://d3fend.mitre.org/technique/d3f:LocalFilePermissions/)\n- ASVS V7.1\n- MASVS-STORAGE-2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 121,

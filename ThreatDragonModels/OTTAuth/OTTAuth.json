@@ -305,7 +305,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Angreifer legt dienst lahm\nCAPEC-125 Flooding\nT1489 Service Stop\nD7, R10, E2, A10, D0 = 5,8",
-                  "mitigation": "Filterung des Netzwerkverkehr: Datenverkehr im Netzwerk zu überwachen und zu filtern, um schädliche Aktivitäten zu erkennen und zu blockieren. Netzwerkverkehr nach Anzeichen von übermäßigem oder schädlichem Datenverkehr analysiert und blockiert.\n\n- Umsetzung:\n\n- D3-NTF (https://d3fend.mitre.org/technique/d3f:NetworkTrafficFiltering/)\n- ASVS V\n- MASVS ",
+                  "mitigation": "Filterung des Netzwerkverkehr: Datenverkehr im Netzwerk zu überwachen und zu filtern, um schädliche Aktivitäten zu erkennen und zu blockieren. Netzwerkverkehr nach Anzeichen von übermäßigem oder schädlichem Datenverkehr analysiert und blockiert.\n\n- Umsetzung: Einsatz von Firewalls, IPS, etc. Richtlinien für erlaubten und unerwünschten Datenverkehr sowie regelmäßige Aktualisierungen der Filterregeln.\n\n- D3-NTF (https://d3fend.mitre.org/technique/d3f:NetworkTrafficFiltering/)\n- ASVS V\n- MASVS-NETWORK",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 107,
@@ -1619,46 +1619,6 @@
                 "y": -30
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "ecc191b9-6c1d-4c67-8262-707b8df5879c",
-            "source": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "target": {
-              "x": 320.99999999999994,
-              "y": -110.99999999999994
-            }
           },
           {
             "position": {

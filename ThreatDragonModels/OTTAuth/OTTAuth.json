@@ -1680,7 +1680,7 @@
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "angreifer editiert oder löscht log-files um attacke zu vertuschen\nCAPEC-93: Log Injection-Tampering-Forging\nT1565 Data Manipulation\nD7, R5, E10, A5, D8 = 7\n",
-                  "mitigation": "Log-Integritätsüberwachung: die Integrität von Log-Dateien sicherzustellen, um Angriffe wie das Löschen oder Ändern von Log-Dateien zu verhindern. Durch die Überwachung der Integrität können verdächtige Aktivitäten sofort erkannt werden.\n\n- Umsetzung: Ein paar Tools kann Dateien überwachen, indem sie die aktuellen Artifakten zu einem vorherigen Snapshot vergleichen, z.B. tripwire in Unix, Microsoft Azure in Windows\n\n- Reduktion: D-, R-, E-, A-, D => D, R, E, A, D =\n\n- D3-FIM (https://d3fend.mitre.org/technique/d3f:FileIntegrityMonitoring/)\n- ASVS V7.3\n- MASVS-RESILIENCE-2",
+                  "mitigation": "Log-Integritätsüberwachung: die Integrität von Log-Dateien sicherzustellen, um Angriffe wie das Löschen oder Ändern von Log-Dateien zu verhindern. Durch die Überwachung der Integrität können verdächtige Aktivitäten sofort erkannt werden.\n\n- Umsetzung: Ein paar Tools kann Dateien überwachen, indem sie die aktuellen Artifakten zu einem vorherigen Snapshot vergleichen, z.B. tripwire in Unix, Microsoft Azure in Windows\n\n- Reduktion: D-5, R-2, E-2, A-2, D+2 => D2, R3, E8, A3, D10 = 5,2\n\n- D3-FIM (https://d3fend.mitre.org/technique/d3f:FileIntegrityMonitoring/)\n- ASVS V7.3\n- MASVS-RESILIENCE-2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 110,
